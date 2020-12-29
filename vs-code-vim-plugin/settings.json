@@ -1,0 +1,69 @@
+{
+  "vim.easymotion": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": false,
+  "vim.highlightedyank.enable": true,
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["click"],
+      "after": ["i"]
+    },
+    {
+      "before": [";"],
+      "after": ["<leader>", "<leader>", "s"]
+    },
+    {
+      "before": ["/"],
+      "after": ["<leader>", "<leader>", "/"]
+    },
+    {
+      "before": ["tab"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": ["`"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["p"],
+      "after": ["[", "p"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    },
+    {
+      "before": ["p"],
+      "after": ["p", "g", "v", "y"]
+    },
+    {
+      "before": [";"],
+      "after": ["<leader>", "<leader>", "s"]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<esc>"]
+    },
+    {
+      "before": ["k", "k"],
+      "commands": ["cursorLineEnd"]
+    },
+    {
+      "before": ["j", "k"],
+      "commands": ["editor.action.jumpToBracket", "cursorRight"]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-i>": false,
+    "<C-v>": false
+  },
+  "vim.startInInsertMode": false
+}
